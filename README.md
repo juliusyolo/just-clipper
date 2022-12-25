@@ -24,7 +24,7 @@ graph TB
 
 ## 使用配置
 
-配置代理 ：`-javaagent:just-clipper-agent-1.0-RELEASE.jar=clipper.yml`
+配置代理 ：`-javaagent:just-clipper-agent-1.0.0-RELEASE.jar=clipper.yml`
 
 ## 配置说明
 
