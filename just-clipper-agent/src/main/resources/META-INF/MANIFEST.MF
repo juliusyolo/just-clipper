@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Premain-Class: com.sdefaa.just.clipper.agent.JustClipperAgentMain
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+Can-Set-Native-Method-Prefix: false
+Boot-Class-Path: just-clipper-agent-1.0.0-RELEASE.jar

@@ -1,0 +1,51 @@
+clipper:
+  debug: true
+  log-config:
+    enable : true
+    rules :
+      - regex: (客户姓名:[\u4E00-\u9FA5]+)[\u4E00-\u9FA5]{1}([\u4E00-\u9FA5]{1})
+        replacement: $1*$2
+      - regex: (客户姓名:[\u4E00-\u9FA5]{1})[\u4E00-\u9FA5]{1}
+        replacement: $1*
+      - regex: (身份证号:\d{4})\d{10}(\w{4})
+        replacement: $1******$2
+      - regex: (手机号:\d{3})\d{4}(\d{4})
+        replacement: $1****$2
+      - regex: (邮箱:\w{1,3})\w*(@\w*)
+        replacement: $1***$2
+      - regex: (银行卡号:\d{6})\w*(\d{4})
+        replacement: $1******$2
+  view-config:
+    enable : true
+    scan-packages:
+      - com.sdefaa.*
+    urls:
+      - /customers/query
+    rules :
+      - keyword: name
+        regex: ([\u4E00-\u9FA5]+)[\u4E00-\u9FA5]{1}([\u4E00-\u9FA5]{1})$
+        replacement: $1*$2
+      - keyword: name
+        regex: ([\u4E00-\u9FA5]{1})[\u4E00-\u9FA5]{1}$
+        replacement: $1*
+      - keyword: phone
+        regex: (1[3-9]{1}\d{1})\d{4}(\d{4})$
+        replacement: $1****$2
+      - keyword: phone
+        regex: (\d{3,4})-\d{5,6}(\d{2})$
+        replacement: $1****$2
+      - keyword: phone
+        regex: (\d{2})\d{5}(\d{3})$
+        replacement: $1****$2
+      - keyword: phone
+        regex: (\d{2})\d{3,4}(\d{2})$
+        replacement: $1****$2
+      - keyword: identNo
+        regex: (\d+)\w{6}$
+        replacement: $1******
+      - keyword: email
+        regex: (\w{1,3})\w*(@\w*)
+        replacement: $1***$2
+      - keyword: bankNo
+        regex: (\d{6})\w*(\d{4})$
+        replacement: $1******$2
