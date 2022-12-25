@@ -2,7 +2,7 @@
 
 `Just Clipper`是一款`Java`应用程序日志脱敏和前端视图层对象脱敏的工具，它的特点是代码非侵入性，对于现有项目无需改造，就能实现脱敏的效果。
 
-[![Github release](https://img.shields.io/badge/release-v1.0.0-brightgreen)]([https://github.com/4defaa/just-clipper/releases](https://github.com/4defaa/just-clipper/releases))[![License](https://img.shields.io/badge/license-Apache--2.0-orange)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Github release](https://img.shields.io/badge/release-v1.0.0-brightgreen)](https://github.com/4defaa/just-clipper/releases)[![License](https://img.shields.io/badge/license-Apache--2.0-orange)](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## 项目结构
 
