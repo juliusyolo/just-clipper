@@ -1,4 +1,6 @@
-# Just Clipper
+<div>
+  <img src="logo.png"/>
+</div>
 
 `Just Clipper`是一款`Java`应用程序日志脱敏和前端视图层对象脱敏的工具，它的特点是代码非侵入性，对于现有项目无需改造，就能实现脱敏的效果。
 
